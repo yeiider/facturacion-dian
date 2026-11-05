@@ -1,0 +1,40 @@
+{
+  "name": "facturacion-dian",
+  "version": "0.1.0",
+  "description": "Núcleo de facturación electrónica DIAN (UBL 2.1, CUFE, XAdES, web services SOAP)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeiider/facturacion-dian.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/yeiider/facturacion-dian/issues"
+  },
+  "homepage": "https://github.com/yeiider/facturacion-dian#readme",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.12",
+    "jszip": "^3.10.2",
+    "node-forge": "^1.4.3",
+    "xml-crypto": "^6.4.0",
+    "xmlbuilder2": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/node-forge": "^1.3.14",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}
