@@ -55,7 +55,7 @@ describe('firma XAdES-EPES', () => {
     const dir = mkdtempSync(join(tmpdir(), 'firma-'));
     const archivo = join(dir, 'f.xml');
     writeFileSync(archivo, firmarXades(generarFactura(factura, config).xml, cert));
-    expect(() => execFileSync('python3', ['-I', 'scripts/verificar_firma.py', archivo])).not.toThrow();
+    expect(() => execFileSync('python3', ['scripts/verificar_firma.py', archivo])).not.toThrow();
   });
 
   it('detecta un documento alterado después de firmar', () => {
